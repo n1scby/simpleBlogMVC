@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using nb.BlogLibrary1;
 using simpleBlogMVC.Models;
 
 namespace simpleBlogMVC.Controllers
 {
+   
     public class HomeController : Controller
     {
         private BlogRepository _blogRepo = new BlogRepository();

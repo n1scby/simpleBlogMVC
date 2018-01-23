@@ -6,6 +6,7 @@ namespace nb.BlogLibrary1
     {
         public int Id { get; set; }
         public string Title { get; set; }
+        public string Summary { get; set; }
         public string BlogText { get; set; }
         public string ImageName { get; set; }
         

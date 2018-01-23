@@ -8,10 +8,13 @@
             @Html.DisplayFor(model => model.Title)
         </h5>
         
-        <p>
+        <div>
             <image src="/images/@Model.ImageName" class="img-thumbnail"></image>
+        </div>
+        <div>
             @Html.DisplayFor(model => model.BlogText)
-        </p>
+        </div>
+     
         
     </div>
 </div>

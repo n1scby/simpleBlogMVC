@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using nb.BlogLibrary1;
 
 namespace simpleBlogMVC.Controllers
 {
+    [Authorize]
     public class BlogManagerController : Controller
     {
         private BlogRepository _blogRepo = new BlogRepository();
